@@ -1,11 +1,13 @@
 package com.softtek.fundamentos_spring.modelo.Taller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class SeguroCoche implements ITaller{
 
+    @Autowired
     private ITaller taller_aseguradora;
 
     private String n_aseguradora;

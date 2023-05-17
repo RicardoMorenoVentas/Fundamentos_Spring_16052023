@@ -1,8 +1,10 @@
 package com.softtek.fundamentos_spring.modelo.Taller;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("TMecanica")
+@Primary
 public class TallerMecanica implements  ITaller{
 
     @Override

@@ -1,8 +1,10 @@
 package com.softtek.fundamentos_spring.modelo.IDAO;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("Desarrollo")
+@Primary
 public class AccesoDesarrollo implements IDAO{
     @Override
     public String insertar(Cliente c1) {

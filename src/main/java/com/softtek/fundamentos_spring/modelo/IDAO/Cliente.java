@@ -17,10 +17,26 @@ public class Cliente {
         this.NIF = NIF;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNIF() {
+        return NIF;
+    }
+
+    public void setNIF(String NIF) {
+        this.NIF = NIF;
+    }
+
     @Override
     public String toString() {
         return "Cliente " +
-                "con nombre='" + nombre + '\'' +
-                ", NIF='" + NIF + '\'';
+                "con nombre '" + nombre + '\'' +
+                ", NIF '" + NIF + '\'';
     }
 }
